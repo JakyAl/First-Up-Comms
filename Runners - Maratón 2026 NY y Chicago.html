@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación It's Time to Run - Culligan México</title>
+    
+    <!-- Importar tipografía Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlue: '#2c64f6',
+                        brandPurple: '#c182ff',
+                        brandNavy: '#0f172a',
+                        brandMint: '#5eead4',
+                        brandLight: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f1f5f9;
+        }
+        /* Forma de flecha/bandera similar a la imagen 1 */
+        .banner-shape {
+            clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+        }
+        @media (max-width: 768px) {
+            .banner-shape {
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+            }
+        }
+        .dotted-underline {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 2px;
+            text-decoration-color: rgba(255,255,255,0.7);
+        }
+    </style>
+</head>
+<body class="py-10 px-4 flex justify-center items-center min-h-screen">
+
+    <div class="max-w-4xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden relative">
+        
+        <!-- Elementos decorativos estilo 3D / Isométrico (Imagen 2) -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brandMint rounded-bl-full opacity-20 -z-10 transform translate-x-10 -translate-y-10"></div>
+        <div class="absolute bottom-0 left-0 w-40 h-40 bg-brandBlue rounded-tr-full opacity-10 -z-10 transform -translate-x-5 translate-y-5"></div>
+
+        <!-- Encabezado -->
+        <div class="px-8 pt-12 pb-8 text-center relative z-10 border-b border-gray-100">
+            <div class="inline-block bg-brandMint text-brandNavy font-bold px-4 py-1 rounded-full text-sm uppercase tracking-wider mb-4 shadow-sm">
+                Culligan México
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brandNavy mb-4 tracking-tight">
+                ¡It's Time to <span class="text-brandBlue">Run</span>! 🏃
+            </h1>
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Atención corredores
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                ¡Las solicitudes para los maratones de Chicago y Nueva York se cerrarán pronto! Este otoño, <strong class="text-brandBlue">TÚ</strong> puedes hacer algo igualmente memorable.
+            </p>
+            <div class="mt-6 p-4 bg-brandLight rounded-2xl border border-gray-200 inline-block">
+                <p class="font-semibold text-brandPurple text-lg">
+                    ¿Corres o te gustaría intentarlo por primera vez? <br class="hidden md:block">¡Este es el momento de postularte!
+                </p>
+            </div>
+        </div>
+
+        <!-- Contenido Principal con Banderas (Imagen 1) -->
+        <div class="px-6 md:px-10 py-8 space-y-8 relative z-10">
+            
+            <!-- Bloque 1: Beneficios -->
+            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div class="w-full md:w-5/12 bg-brandBlue text-white p-6 md:py-8 banner-shape flex justify-between items-center shadow-lg">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Beneficios</h3>
+                        <p class="text-sm font-medium dotted-underline">Lo que recibirás</p>
+                    </div>
+                    <div class="mr-6 md:mr-10">
+                        <svg xmlns="http://www.w3.org/polaris" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                            <rect x="2" y="7" width="20" height="5"></rect>
+                            <line x1="12" y1="22" x2="12" y2="7"></line>
+                            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full md:w-7/12 text-gray-700">
+                    <ul class="space-y-4">
+                        <li class="flex items-start text-lg">
+                            <span class="text-2xl mr-3">🎟️</span> 
+                            <span><strong class="text-brandBlue font-bold">Inscripción clasificatoria</strong> a Chicago (11 de oct) o Nueva York (1 de nov)</span>
+                        </li>
+                        <li class="flex items-start text-lg">
+                            <span class="text-2xl mr-3">🗽</span> 
+                            <span>Un <strong class="text-brandBlue font-bold">viaje con gastos pagados</strong> desde tu unidad de negocio</span>
+                        </li>
+                        <li class="flex items-start text-lg">
+                            <span class="text-2xl mr-3">👕</span> 
+                            <span><strong class="text-brandBlue font-bold">Equipo de running</strong> exclusivo de Culligan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 2: Compromiso -->
+            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div class="w-full md:w-5/12 bg-brandPurple text-white p-6 md:py-8 banner-shape flex justify-between items-center shadow-lg">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Nuestra petición</h3>
+                        <p class="text-sm font-medium dotted-underline">Tu compromiso</p>
+                    </div>
+                    <div class="mr-6 md:mr-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full md:w-7/12 text-gray-700">
+                    <ul class="space-y-4">
+                        <li class="flex items-start text-lg">
+                            <span class="text-2xl mr-3">🏅</span> 
+                            <span>Comprométete a <strong class="text-brandPurple font-bold">representar a Culligan</strong> y completar la maratón de Chicago o Nueva York.</span>
+                        </li>
+                        <li class="flex items-start text-lg">
+                            <span class="text-2xl mr-3">📢</span> 
+                            <span><strong class="text-brandPurple font-bold">Comparte tu viaje</strong>, desde el entrenamiento hasta la carrera, a través de contenido en nuestros canales.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 3: Propósito -->
+            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div class="w-full md:w-5/12 bg-brandNavy text-white p-6 md:py-8 banner-shape flex justify-between items-center shadow-lg">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Inolvidable</h3>
+                        <p class="text-sm font-medium dotted-underline">Sé parte de la historia</p>
+                    </div>
+                    <div class="mr-6 md:mr-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.144 11.205l2.122-2.122a2.828 2.828 0 1 0-4-4l-2.122 2.122"></path>
+                            <path d="M10.606 14.034L8.485 16.155a2.828 2.828 0 1 0 4 4l2.122-2.122"></path>
+                            <path d="M9.192 9.192l5.657 5.657"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full md:w-7/12 text-gray-700">
+                    <p class="text-base md:text-lg mb-3">
+                        Los corredores del equipo Culligan demuestran lo que es posible cuando el <strong>propósito impulsa cada paso</strong>: correr por un agua mejor, un planeta más sostenible, los logros personales y el orgullo de representar a One Culligan en el escenario mundial.
+                    </p>
+                    <p class="text-base md:text-lg">
+                        Ya sea tu primera maratón o tu próximo desafío, esta es tu oportunidad de entrenar con intención y cruzar una línea de meta icónica, al igual que tus colegas de la Maratón de París 👇
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sección de Cierre y Call to Action -->
+        <div class="bg-gray-50 border-t border-gray-100 p-8 md:p-12 text-center relative z-10">
+            <h3 class="text-2xl font-extrabold text-brandNavy mb-6">¿Cómo presentar tu solicitud?</h3>
+            
+            <div class="max-w-xl mx-auto bg-white rounded-xl shadow-md p-6 border-l-4 border-brandMint mb-6 text-left">
+                <p class="text-gray-700 text-lg mb-4">
+                    Envía tu solicitud antes del <strong class="text-brandBlue text-xl">10 de mayo</strong>. 
+                </p>
+                <p class="text-gray-600 text-sm">
+                    Los ganadores recibirán una notificación a principios de junio para que tengan tiempo de entrenar.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
+                <button class="bg-brandBlue hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-lg transform transition hover:-translate-y-1 w-full md:w-auto text-lg">
+                    Enviar Solicitud Aquí
+                </button>
+            </div>
+
+            <div class="mt-10 pt-6 border-t border-gray-200">
+                <p class="text-gray-500 text-sm">
+                    ¿Tienes alguna duda o ya estás clasificado de forma independiente? <br class="hidden md:block">
+                    Ponte en contacto con <a href="mailto:chicagomarathon@culligan.com" class="text-brandBlue font-bold hover:underline">chicagomarathon@culligan.com</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
